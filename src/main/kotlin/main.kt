@@ -1,10 +1,10 @@
 fun main() {
-    val likes: Int = 111;
-    var people_humans: String = "Людям";
+    val likes: Int = 2;
 
-    if (likes.toString().last() == '1') {
-        people_humans = "Человеку";
+    var peopleHumans: String = "людям";
+    if (likes % 10 == 1 && likes % 100 != 11) {
+        peopleHumans = "человеку";
     }
 
-    println("Понравилось $likes $people_humans");
+    println("Понравилось $likes $peopleHumans");
 }
